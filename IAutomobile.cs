@@ -11,7 +11,7 @@ namespace Reference_Maxey_Andrew
     // The class can edit the method so its doesnt edit all
     internal interface IAutomobile
     {
-
+        // public/private,type variableName = value;
         public double Speed { get; }
 
         public int Wheels { get; }

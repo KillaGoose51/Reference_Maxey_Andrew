@@ -37,7 +37,7 @@ namespace Reference_Maxey_Andrew
 
         public void Stringify()
         {
-            throw new NotImplementedException();
+            Console.WriteLine($"The Sedan is traveling at a speed of {Speed} on {Wheels} wheels, with a License Plate # of {LicensePlate}!");
         }
     }
 }

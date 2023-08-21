@@ -18,20 +18,27 @@ namespace Reference_Maxey_Andrew
 
         // parameters are the variables that are passed as arguments to a method
         // When using the class in the class it makes a constructor, because you are giving it properities to set values too
-        public Truck(double speedParam, string weightParam, string licenseNum)
+        public Truck(double speedParam, double weightParam, string licenseNum)
         {
+            //speed is the property, speedParam is the param.
             Speed = speedParam;
             // weight is a properity
             Weight = weightParam;
             LicensePlate = licenseNum;
             if (Weight < 400)
-            { }
+            {
+                Wheels = 8;
+            }
+            else
+            {
+                Wheels = 12;
+            }
         }
         // so if weight = weightParam and the arguement is 5 then the weight is 5, LicensePlate = lucenseNum and the arguement is 120 the licenseplate is 120
          
         public void Stringify()
         {
-            throw new NotImplementedException();
+            Console.WriteLine($"The Truck is traveling at a speed of {Speed} on {Wheels} wheels, with a License Plate # of {LicensePlate}!");
         }
     }
 }
